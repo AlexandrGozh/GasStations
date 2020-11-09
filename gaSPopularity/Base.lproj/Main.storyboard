@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5D-ks-CxM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gas stations-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GasStationsViewController" customModule="gaSPopularity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Myf-D5-wVU">
+                                <rect key="frame" x="0.0" y="135" width="414" height="727"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GasStationReusableCell" textLabel="SjN-bH-2Dn" detailTextLabel="j8B-c2-Hla" style="IBUITableViewCellStyleSubtitle" id="D6l-RO-rpQ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D6l-RO-rpQ" id="stK-Hw-2N2">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SjN-bH-2Dn">
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j8B-c2-Hla">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oFC-vf-TQa"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Efk-1q-Y9l"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w2r-Mt-DxT">
+                                <rect key="frame" x="8" y="96" width="398" height="32"/>
+                                <segments>
+                                    <segment title="History"/>
+                                    <segment title="Statistic"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="qNh-rN-fEQ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Myf-D5-wVU" firstAttribute="top" secondItem="w2r-Mt-DxT" secondAttribute="bottom" constant="8" id="C7N-kf-az4"/>
+                            <constraint firstItem="Myf-D5-wVU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HCb-sk-q4b"/>
+                            <constraint firstItem="Myf-D5-wVU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UYz-Ll-HY7"/>
+                            <constraint firstItem="w2r-Mt-DxT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="XVE-yP-s2g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w2r-Mt-DxT" secondAttribute="trailing" constant="8" id="dfz-o3-5Gc"/>
+                            <constraint firstItem="w2r-Mt-DxT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="gc8-9O-sy6"/>
+                            <constraint firstItem="Myf-D5-wVU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ogV-FQ-lDz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gas stations" id="pvv-Q4-Hyn">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="6HO-qV-pGR">
+                            <connections>
+                                <action selector="addBarButtonTapped:" destination="BYZ-38-t0r" id="2hN-9w-w8z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gasStationsTableView" destination="Myf-D5-wVU" id="h0e-YS-8tI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="93.75"/>
+        </scene>
+        <!--Edit Gas Station View Controller-->
+        <scene sceneID="Bat-pJ-BPh">
+            <objects>
+                <viewController storyboardIdentifier="EditGasStationViewController" id="dhx-Zg-mQl" customClass="EditGasStationViewController" customModule="gaSPopularity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DN6-2r-Qtm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a gas station name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-0e-wqO">
+                                <rect key="frame" x="8" y="52" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iu-18-8TK">
+                                <rect key="frame" x="8" y="94" width="398" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="RO2-HW-gXd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-zt-yFJ">
+                                <rect key="frame" x="0.0" y="245" width="414" height="651"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-RH-eeW">
+                                <rect key="frame" x="193" y="541.5" width="28" height="27.5"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MZn-WP-aXD">
+                                <rect key="frame" x="8" y="122" width="398" height="32"/>
+                                <segments>
+                                    <segment title="Diesel"/>
+                                    <segment title="Regular"/>
+                                    <segment title="Plus"/>
+                                    <segment title="Premium"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter fuel quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Hr-xv-W7s">
+                                <rect key="frame" x="8" y="161" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter price per galon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2Z-Hp-cvm">
+                                <rect key="frame" x="8" y="203" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alp-qT-Von">
+                                <rect key="frame" x="376" y="253" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3hL-qE-WGO"/>
+                                    <constraint firstAttribute="height" constant="30" id="jpf-BD-zbB"/>
+                                </constraints>
+                                <state key="normal" image="location" catalog="system">
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="userLocationButtonTapped:" destination="dhx-Zg-mQl" eventType="touchUpInside" id="8o0-FJ-QYI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vap-j4-3x0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="alp-qT-Von" secondAttribute="trailing" constant="8" id="0Dc-G7-s33"/>
+                            <constraint firstItem="MZn-WP-aXD" firstAttribute="leading" secondItem="Vap-j4-3x0" secondAttribute="leading" constant="8" id="4DU-8n-VVO"/>
+                            <constraint firstItem="7iu-18-8TK" firstAttribute="top" secondItem="lwV-0e-wqO" secondAttribute="bottom" constant="8" id="5iM-JR-1rG"/>
+                            <constraint firstItem="lwV-0e-wqO" firstAttribute="leading" secondItem="Vap-j4-3x0" secondAttribute="leading" constant="8" id="90l-Tf-xnJ"/>
+                            <constraint firstItem="Vap-j4-3x0" firstAttribute="trailing" secondItem="MZn-WP-aXD" secondAttribute="trailing" constant="8" id="Bk1-GF-yDH"/>
+                            <constraint firstItem="alp-qT-Von" firstAttribute="top" secondItem="LKc-zt-yFJ" secondAttribute="top" constant="8" id="CRn-DV-rXP"/>
+                            <constraint firstItem="k2Z-Hp-cvm" firstAttribute="top" secondItem="4Hr-xv-W7s" secondAttribute="bottom" constant="8" id="Exr-ez-2ho"/>
+                            <constraint firstItem="bcj-RH-eeW" firstAttribute="centerX" secondItem="LKc-zt-yFJ" secondAttribute="centerX" id="IZI-iu-sOq"/>
+                            <constraint firstItem="Vap-j4-3x0" firstAttribute="trailing" secondItem="7iu-18-8TK" secondAttribute="trailing" constant="8" id="Iq0-10-Vsf"/>
+                            <constraint firstItem="k2Z-Hp-cvm" firstAttribute="leading" secondItem="Vap-j4-3x0" secondAttribute="leading" constant="8" id="J1s-AK-dxV"/>
+                            <constraint firstItem="MZn-WP-aXD" firstAttribute="top" secondItem="7iu-18-8TK" secondAttribute="bottom" constant="8" id="KmP-pF-z7a"/>
+                            <constraint firstAttribute="bottom" secondItem="LKc-zt-yFJ" secondAttribute="bottom" id="L4s-z0-WNq"/>
+                            <constraint firstItem="LKc-zt-yFJ" firstAttribute="leading" secondItem="DN6-2r-Qtm" secondAttribute="leading" id="OmJ-pc-Dec"/>
+                            <constraint firstItem="Vap-j4-3x0" firstAttribute="trailing" secondItem="lwV-0e-wqO" secondAttribute="trailing" constant="8" id="U2Y-B5-bqK"/>
+                            <constraint firstItem="Vap-j4-3x0" firstAttribute="trailing" secondItem="4Hr-xv-W7s" secondAttribute="trailing" constant="8" id="WDx-Ps-NOI"/>
+                            <constraint firstAttribute="trailing" secondItem="LKc-zt-yFJ" secondAttribute="trailing" id="X49-DB-QX1"/>
+                            <constraint firstItem="Vap-j4-3x0" firstAttribute="trailing" secondItem="k2Z-Hp-cvm" secondAttribute="trailing" constant="8" id="Yyn-DS-dJF"/>
+                            <constraint firstItem="LKc-zt-yFJ" firstAttribute="leading" secondItem="DN6-2r-Qtm" secondAttribute="leading" id="bm2-TG-Une"/>
+                            <constraint firstItem="4Hr-xv-W7s" firstAttribute="leading" secondItem="Vap-j4-3x0" secondAttribute="leading" constant="8" id="f1n-9W-91C"/>
+                            <constraint firstItem="4Hr-xv-W7s" firstAttribute="top" secondItem="MZn-WP-aXD" secondAttribute="bottom" constant="8" id="hT9-e2-nce"/>
+                            <constraint firstItem="bcj-RH-eeW" firstAttribute="centerY" secondItem="LKc-zt-yFJ" secondAttribute="centerY" constant="-15" id="jZ8-3c-MzE"/>
+                            <constraint firstItem="LKc-zt-yFJ" firstAttribute="top" secondItem="k2Z-Hp-cvm" secondAttribute="bottom" constant="8" id="mnp-oy-fcX"/>
+                            <constraint firstAttribute="bottom" secondItem="LKc-zt-yFJ" secondAttribute="bottom" id="owJ-BZ-903"/>
+                            <constraint firstAttribute="trailing" secondItem="LKc-zt-yFJ" secondAttribute="trailing" id="rEU-lR-R65"/>
+                            <constraint firstItem="7iu-18-8TK" firstAttribute="leading" secondItem="Vap-j4-3x0" secondAttribute="leading" constant="8" id="wSj-My-kWr"/>
+                            <constraint firstItem="lwV-0e-wqO" firstAttribute="top" secondItem="Vap-j4-3x0" secondAttribute="top" constant="8" id="wsB-lj-pJK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6OM-fu-8uT">
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="Glb-Pu-7Qa">
+                            <connections>
+                                <action selector="editBarButtonTapped:" destination="dhx-Zg-mQl" id="UBZ-z1-Eg6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="7iu-18-8TK" id="KSf-AR-hYf"/>
+                        <outlet property="editBarButton" destination="Glb-Pu-7Qa" id="laF-Le-Ryc"/>
+                        <outlet property="fuelTypeControl" destination="MZn-WP-aXD" id="WA6-jy-bUA"/>
+                        <outlet property="gasStationNameTextField" destination="lwV-0e-wqO" id="L0C-8o-aDr"/>
+                        <outlet property="mapView" destination="LKc-zt-yFJ" id="8BJ-nS-uJk"/>
+                        <outlet property="priceTextField" destination="k2Z-Hp-cvm" id="nqi-nt-I08"/>
+                        <outlet property="quantityTextField" destination="4Hr-xv-W7s" id="GD6-50-enF"/>
+                        <outlet property="userLocationButton" destination="alp-qT-Von" id="a5P-Fl-I8x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4XR-oF-Yqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.7971014492755" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ADz-ez-Nbl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U5D-ks-CxM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3sn-Nv-LHS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wad-5f-rAX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVp-8r-NT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

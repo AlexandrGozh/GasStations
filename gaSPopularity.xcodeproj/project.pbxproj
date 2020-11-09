@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		029DAACA995E01108795007B /* Pods_gaSPopularity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB1B6AD2723161E5B5651F8 /* Pods_gaSPopularity.framework */; };
+		4441450025409C5600DBA0D9 /* GasStationsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444144FF25409C5600DBA0D9 /* GasStationsStore.swift */; };
+		444145252541CCFF00DBA0D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 444145242541CCFF00DBA0D9 /* GoogleService-Info.plist */; };
+		444145862541D7C000DBA0D9 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444145852541D7C000DBA0D9 /* FirebaseService.swift */; };
+		444BABD6253DF37A00C16259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BABD5253DF37A00C16259 /* AppDelegate.swift */; };
+		444BABD8253DF37A00C16259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BABD7253DF37A00C16259 /* SceneDelegate.swift */; };
+		444BABDA253DF37A00C16259 /* GasStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BABD9253DF37A00C16259 /* GasStationsViewController.swift */; };
+		444BABDD253DF37A00C16259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444BABDB253DF37A00C16259 /* Main.storyboard */; };
+		444BABDF253DF37C00C16259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444BABDE253DF37C00C16259 /* Assets.xcassets */; };
+		444BABE2253DF37C00C16259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444BABE0253DF37C00C16259 /* LaunchScreen.storyboard */; };
+		449835D925594AA200411B2E /* AddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449835D825594AA200411B2E /* AddressService.swift */; };
+		44A2AF89253F3E03001E5C19 /* GasRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2AF88253F3E03001E5C19 /* GasRecord.swift */; };
+		44E5EDCC2540373500D89A6D /* EditGasStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5EDCB2540373500D89A6D /* EditGasStationViewController.swift */; };
+		44E5EDF1254046CB00D89A6D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5EDF0254046CB00D89A6D /* AppCoordinator.swift */; };
+		44E5EDF62540477500D89A6D /* GasStationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5EDF52540477500D89A6D /* GasStationsViewModel.swift */; };
+		44E5EDFF2540488D00D89A6D /* EditGasStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5EDFE2540488D00D89A6D /* EditGasStationViewModel.swift */; };
+		D962B6E52558A9E7005921A1 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962B6E42558A9E7005921A1 /* UIViewController+Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06C311D5F9A145060C84C503 /* Pods-gaSPopularityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaSPopularityTests.debug.xcconfig"; path = "Target Support Files/Pods-gaSPopularityTests/Pods-gaSPopularityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CB1B6AD2723161E5B5651F8 /* Pods_gaSPopularity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaSPopularity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		355F221D7F9CF32F43D255C0 /* Pods-gaSPopularity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaSPopularity.release.xcconfig"; path = "Target Support Files/Pods-gaSPopularity/Pods-gaSPopularity.release.xcconfig"; sourceTree = "<group>"; };
+		3C0B36A5FF9ABE0A09486322 /* Pods_gaSPopularityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaSPopularityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBA699F59B0549AF4674FC0 /* Pods-gaSPopularity-gaSPopularityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaSPopularity-gaSPopularityUITests.release.xcconfig"; path = "Target Support Files/Pods-gaSPopularity-gaSPopularityUITests/Pods-gaSPopularity-gaSPopularityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		444144FF25409C5600DBA0D9 /* GasStationsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationsStore.swift; sourceTree = "<group>"; };
+		444145242541CCFF00DBA0D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		444145852541D7C000DBA0D9 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		444BABD2253DF37A00C16259 /* gaSPopularity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaSPopularity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		444BABD5253DF37A00C16259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		444BABD7253DF37A00C16259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		444BABD9253DF37A00C16259 /* GasStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationsViewController.swift; sourceTree = "<group>"; };
+		444BABDC253DF37A00C16259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		444BABDE253DF37C00C16259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		444BABE1253DF37C00C16259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		444BABE3253DF37C00C16259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449835D825594AA200411B2E /* AddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressService.swift; sourceTree = "<group>"; };
+		44A2AF88253F3E03001E5C19 /* GasRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasRecord.swift; sourceTree = "<group>"; };
+		44E5EDCB2540373500D89A6D /* EditGasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGasStationViewController.swift; sourceTree = "<group>"; };
+		44E5EDF0254046CB00D89A6D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		44E5EDF52540477500D89A6D /* GasStationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationsViewModel.swift; sourceTree = "<group>"; };
+		44E5EDFE2540488D00D89A6D /* EditGasStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGasStationViewModel.swift; sourceTree = "<group>"; };
+		59404BBDE47C67E8B2676064 /* Pods-gaSPopularityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaSPopularityTests.release.xcconfig"; path = "Target Support Files/Pods-gaSPopularityTests/Pods-gaSPopularityTests.release.xcconfig"; sourceTree = "<group>"; };
+		A371A1C8C2B699B99A7B8A5D /* Pods_gaSPopularity_gaSPopularityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaSPopularity_gaSPopularityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C1BD4C37A5E94375F5610E /* Pods-gaSPopularity-gaSPopularityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaSPopularity-gaSPopularityUITests.debug.xcconfig"; path = "Target Support Files/Pods-gaSPopularity-gaSPopularityUITests/Pods-gaSPopularity-gaSPopularityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D962B6E42558A9E7005921A1 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		DA5A2A50AC56D7CB00D03E4E /* Pods-gaSPopularity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaSPopularity.debug.xcconfig"; path = "Target Support Files/Pods-gaSPopularity/Pods-gaSPopularity.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		444BABCF253DF37A00C16259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029DAACA995E01108795007B /* Pods_gaSPopularity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		444145842541D7AC00DBA0D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				449835D825594AA200411B2E /* AddressService.swift */,
+				444145852541D7C000DBA0D9 /* FirebaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		444BABC9253DF37A00C16259 = {
+			isa = PBXGroup;
+			children = (
+				444BABD4253DF37A00C16259 /* gaSPopularity */,
+				444BABD3253DF37A00C16259 /* Products */,
+				F7ECA0E7197FB9C5B8506489 /* Pods */,
+				90C4F5EC8B4315F420DD2284 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		444BABD3253DF37A00C16259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				444BABD2253DF37A00C16259 /* gaSPopularity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		444BABD4253DF37A00C16259 /* gaSPopularity */ = {
+			isa = PBXGroup;
+			children = (
+				D962B6E22558A9D2005921A1 /* Extensions */,
+				44A2AF86253F3DC3001E5C19 /* GasStations */,
+				44E5EDFD2540486100D89A6D /* EditGasStation */,
+				44A2AF87253F3DDA001E5C19 /* Models */,
+				444145842541D7AC00DBA0D9 /* Services */,
+				444BABD5253DF37A00C16259 /* AppDelegate.swift */,
+				44E5EDF0254046CB00D89A6D /* AppCoordinator.swift */,
+				444BABD7253DF37A00C16259 /* SceneDelegate.swift */,
+				444BABDB253DF37A00C16259 /* Main.storyboard */,
+				444145242541CCFF00DBA0D9 /* GoogleService-Info.plist */,
+				444BABDE253DF37C00C16259 /* Assets.xcassets */,
+				444BABE0253DF37C00C16259 /* LaunchScreen.storyboard */,
+				444BABE3253DF37C00C16259 /* Info.plist */,
+			);
+			path = gaSPopularity;
+			sourceTree = "<group>";
+		};
+		44A2AF86253F3DC3001E5C19 /* GasStations */ = {
+			isa = PBXGroup;
+			children = (
+				444BABD9253DF37A00C16259 /* GasStationsViewController.swift */,
+				44E5EDF52540477500D89A6D /* GasStationsViewModel.swift */,
+			);
+			path = GasStations;
+			sourceTree = "<group>";
+		};
+		44A2AF87253F3DDA001E5C19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44A2AF88253F3E03001E5C19 /* GasRecord.swift */,
+				444144FF25409C5600DBA0D9 /* GasStationsStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44E5EDFD2540486100D89A6D /* EditGasStation */ = {
+			isa = PBXGroup;
+			children = (
+				44E5EDCB2540373500D89A6D /* EditGasStationViewController.swift */,
+				44E5EDFE2540488D00D89A6D /* EditGasStationViewModel.swift */,
+			);
+			path = EditGasStation;
+			sourceTree = "<group>";
+		};
+		90C4F5EC8B4315F420DD2284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB1B6AD2723161E5B5651F8 /* Pods_gaSPopularity.framework */,
+				A371A1C8C2B699B99A7B8A5D /* Pods_gaSPopularity_gaSPopularityUITests.framework */,
+				3C0B36A5FF9ABE0A09486322 /* Pods_gaSPopularityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D962B6E22558A9D2005921A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D962B6E42558A9E7005921A1 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7ECA0E7197FB9C5B8506489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA5A2A50AC56D7CB00D03E4E /* Pods-gaSPopularity.debug.xcconfig */,
+				355F221D7F9CF32F43D255C0 /* Pods-gaSPopularity.release.xcconfig */,
+				B2C1BD4C37A5E94375F5610E /* Pods-gaSPopularity-gaSPopularityUITests.debug.xcconfig */,
+				3CBA699F59B0549AF4674FC0 /* Pods-gaSPopularity-gaSPopularityUITests.release.xcconfig */,
+				06C311D5F9A145060C84C503 /* Pods-gaSPopularityTests.debug.xcconfig */,
+				59404BBDE47C67E8B2676064 /* Pods-gaSPopularityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		444BABD1253DF37A00C16259 /* gaSPopularity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 444BABFC253DF37D00C16259 /* Build configuration list for PBXNativeTarget "gaSPopularity" */;
+			buildPhases = (
+				C48B47341971DAE069005620 /* [CP] Check Pods Manifest.lock */,
+				444BABCE253DF37A00C16259 /* Sources */,
+				444BABCF253DF37A00C16259 /* Frameworks */,
+				444BABD0253DF37A00C16259 /* Resources */,
+				2EF01CA7B2B03B1024F8824A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gaSPopularity;
+			productName = gaSPopularity;
+			productReference = 444BABD2253DF37A00C16259 /* gaSPopularity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		444BABCA253DF37A00C16259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					444BABD1253DF37A00C16259 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 444BABCD253DF37A00C16259 /* Build configuration list for PBXProject "gaSPopularity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 444BABC9253DF37A00C16259;
+			productRefGroup = 444BABD3253DF37A00C16259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				444BABD1253DF37A00C16259 /* gaSPopularity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		444BABD0253DF37A00C16259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444BABE2253DF37C00C16259 /* LaunchScreen.storyboard in Resources */,
+				444145252541CCFF00DBA0D9 /* GoogleService-Info.plist in Resources */,
+				444BABDF253DF37C00C16259 /* Assets.xcassets in Resources */,
+				444BABDD253DF37A00C16259 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EF01CA7B2B03B1024F8824A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gaSPopularity/Pods-gaSPopularity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gaSPopularity/Pods-gaSPopularity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gaSPopularity/Pods-gaSPopularity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48B47341971DAE069005620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gaSPopularity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		444BABCE253DF37A00C16259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E5EDCC2540373500D89A6D /* EditGasStationViewController.swift in Sources */,
+				4441450025409C5600DBA0D9 /* GasStationsStore.swift in Sources */,
+				444BABDA253DF37A00C16259 /* GasStationsViewController.swift in Sources */,
+				44E5EDFF2540488D00D89A6D /* EditGasStationViewModel.swift in Sources */,
+				D962B6E52558A9E7005921A1 /* UIViewController+Alert.swift in Sources */,
+				444BABD6253DF37A00C16259 /* AppDelegate.swift in Sources */,
+				444145862541D7C000DBA0D9 /* FirebaseService.swift in Sources */,
+				44E5EDF62540477500D89A6D /* GasStationsViewModel.swift in Sources */,
+				44A2AF89253F3E03001E5C19 /* GasRecord.swift in Sources */,
+				44E5EDF1254046CB00D89A6D /* AppCoordinator.swift in Sources */,
+				449835D925594AA200411B2E /* AddressService.swift in Sources */,
+				444BABD8253DF37A00C16259 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		444BABDB253DF37A00C16259 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				444BABDC253DF37A00C16259 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		444BABE0253DF37C00C16259 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				444BABE1253DF37C00C16259 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		444BABFA253DF37D00C16259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		444BABFB253DF37D00C16259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		444BABFD253DF37D00C16259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5A2A50AC56D7CB00D03E4E /* Pods-gaSPopularity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG4TH8QY5S;
+				INFOPLIST_FILE = gaSPopularity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hozhulovskyi.gaSPopularity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		444BABFE253DF37D00C16259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355F221D7F9CF32F43D255C0 /* Pods-gaSPopularity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG4TH8QY5S;
+				INFOPLIST_FILE = gaSPopularity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hozhulovskyi.gaSPopularity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		444BABCD253DF37A00C16259 /* Build configuration list for PBXProject "gaSPopularity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444BABFA253DF37D00C16259 /* Debug */,
+				444BABFB253DF37D00C16259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		444BABFC253DF37D00C16259 /* Build configuration list for PBXNativeTarget "gaSPopularity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444BABFD253DF37D00C16259 /* Debug */,
+				444BABFE253DF37D00C16259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 444BABCA253DF37A00C16259 /* Project object */;
+}
